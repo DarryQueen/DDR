@@ -1,0 +1,43 @@
+Dance Dance Revolution Final Project
+________________________________________
+
+HEADER
+
+By:	Darren Zhao.
+When:	Approximately May of 2012.
+________________________________________
+
+INTRODUCTION
+
+	If it isn't already obvious, this program is an interactive Dance Dance Revolution game. Unfortunately, since computers don't use dance pads, you'll just have to deal with the keyboard.
+
+	Assuming you have a sense of rhythm, try to tap the note right as it hits the gray receptor at the top. Thankfully, the gameplay beat is in sync with the song's rate. Notes inbetween beats will be colored differently so you'll know when there's a tricky trick.
+________________________________________
+
+INSTRUCTIONS
+
+	Note receptors are bound to the directional arrow keys. Since it's this is a game of rhythm, you won't be able to cheat by pausing. Try to only tap when notes appear at the receptor. Missed notes and unnecessary taps will lose you points, while successive hits and accurate taps will give you more points.
+
+	At the main menu screen, click one of the buttons to select a song. Songs are ordered by difficult, so don't pick one you might fail.
+
+	If you decide that you simply fail at DDR and wish to try your own music with your own step chart, you may create a custom song. Follow the template on how to create a Song class using the given SheetReader class.
+________________________________________
+
+CLASS LIST
+
+Note:			Represents a colored note with position, image, and destroyability.
+Receptor:		Represents one of the four gray receptors at the top.
+CoordinateSystem:	Stolen from the DanceStudio project, represents the coordinates of the graphical object.
+MusicPlayer:		Used as a static class, plays music in the form of a .wav file.
+SheetReader:		Also used as a static class, reads the sheet music and translates it into a Song class.
+Song:			Represents a collection of notes, forms the entire step chart of the song.
+SongInput:		For the custom song, allows for user input to search for music files.
+Menu:			Represents the GUI of the gameplay.
+UserInterface:		Represents the GUI of the gameplay.
+ScoreMenu:		Represents the menu that displays score.
+RunMethod:		Holds both the UserInterface and Menu classes, tells them when to run. Also keeps track of time.
+________________________________________
+
+TBD
+
+- Currently, delay between note appearance and beat becomes more obvious further in the song. This is due to a small processing time and is prevalent in slower computers. Small adjustments compensate for this lag, but it still remains.
